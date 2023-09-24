@@ -1,0 +1,100 @@
+.section-fixtures-page .date .date-header,
+.section-results-page .date .date-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.section-fixtures-page .date .date-header span,
+.section-results-page .date .date-header span {
+    color: var(--color-primary);
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.section-fixtures-page .date .date-header h4,
+.section-results-page .date .date-header h4 {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.section-fixtures-page .date .date-header img,
+.section-results-page .date .date-header img {
+    width: 24px;
+}
+
+.section-fixtures-page .date .date-fixtures,
+.section-results-page .date .date-fixtures {
+    padding: 0 24px;
+}
+
+.section-fixtures-page .date .date-fixtures .fixture,
+.section-results-page .date .date-fixtures .fixture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    transform: scale(.9);
+    transition: all .15s ease-in-out;
+}
+
+.section-results-page .date .date-fixtures .fixture:hover {
+    color: var(--text-color-secondary);
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.section-fixtures-page .date .date-fixtures .fixture > div:first-child,
+.section-results-page .date .date-fixtures .fixture > div:first-child {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-fixtures-page .date .date-fixtures .fixture > div:last-child,
+.section-results-page .date .date-fixtures .fixture > div:last-child {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section-results-page .date .date-fixtures .fixture:hover > div:last-child img {
+    content: url('./../images/stadium-white.svg');
+}
+
+.section-fixtures-page .date .date-fixtures .fixture > div:last-child > span,
+.section-results-page .date .date-fixtures .fixture > div:last-child > span {
+    color: var(--color-primary);
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+.section-results-page .date .date-fixtures .fixture:hover > div:last-child > span {
+    color: var(--text-color-secondary);
+}
+
+.section-fixtures-page .date .date-fixtures .fixture > div:last-child > span:first-child,
+.section-results-page .date .date-fixtures .fixture > div:last-child > span:first-child {
+    display: flex;
+    margin-right: 12px;
+}
+
+.section-fixtures-page .date .date-fixtures .fixture .fixture-team,
+.section-results-page .date .date-fixtures .fixture .fixture-team {
+    width: 40%;
+}
+
+.section-fixtures-page .date .date-fixtures .fixture .fixture-team.away-team,
+.section-results-page .date .date-fixtures .fixture .fixture-team.away-team {
+    justify-content: flex-end;
+}

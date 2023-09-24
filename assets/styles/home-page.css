@@ -1,0 +1,115 @@
+.section-home-page .fixtures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-home-page .fixtures > div {
+    min-height: 200px;
+    height: fit-content;
+    width: 30%;
+    padding: 12px;
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+}
+
+.section-home-page .header {
+    height: 52px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-secondary);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--color-tertiary);
+    border-radius: 12px;
+    margin-bottom: 4px;
+}
+
+.section-home-page .header img {
+    width: 32px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    margin: auto;
+}
+
+.section-home-page .fixtures-content .date {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-home-page .fixtures-content .fixture {
+    transform: scale(.9);
+    transition: all .15s ease-in-out;
+}
+
+.section-home-page .fixtures-content .fixture.fixture-played:hover {
+    color: var(--text-color-secondary);
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.section-home-page .standings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.section-home-page .standings .header {
+    width: 90%;
+    background-color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.section-home-page .standings .table-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center
+}
+
+.section-home-page .standings .table-wrapper table {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+}
+
+.section-home-page .standings .table-wrapper table thead tr {
+    transform: scale(.9);
+}
+
+.section-home-page .standings .table-wrapper table .table-row {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    transform: scale(.9);
+    transition: all .15s ease-in-out;
+}
+
+.section-home-page .standings .table-wrapper table .table-row:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.section-home-page .standings .table-wrapper table .th-accent {
+    color: var(--color-primary);
+}
+
+.section-home-page .standings .table-wrapper table .th-club {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-home-page .standings .table-wrapper table .th-club img {
+    width: 32px;
+    margin-right: 12px;
+}

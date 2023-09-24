@@ -1,0 +1,114 @@
+.section-standings-page table img {
+    width: 24px;
+}
+
+.section-standings-page table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.section-standings-page table thead tr {
+    background-color: #fbfafa;
+    border-bottom: 0.1rem solid #ebe5eb;
+    color: #87668a;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    transform: scale(.9);
+}
+
+.section-standings-page table thead tr th {
+    text-align: center;
+}
+
+.section-standings-page table thead tr th:nth-child(1),
+.section-standings-page table thead tr th:nth-child(2) {
+    text-align: left;
+}
+
+.section-standings-page table thead tr th:first-child {
+    padding-left: 3.2rem;
+}
+
+.section-standings-page table tbody tr {
+    height: 3.1rem;
+    border-bottom: 0.1rem solid #f5f2f5;
+    transform: scale(.9);
+    transition: all .15s ease-in-out;
+}
+
+.section-standings-page table tbody tr:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.section-standings-page table tbody tr td {
+    text-align: center;
+}
+
+.section-standings-page table .table-position {
+    display: table-cell;
+    padding-left: 3.2rem;
+    line-height: 2.4rem;
+    text-align: left!important;
+}
+
+.section-standings-page table .table-team {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.section-standings-page table .table-team > span:last-child {
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    line-height: 3.2rem;
+    letter-spacing: -.04rem;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.section-standings-page table .table-points {
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 800;
+}
+
+.section-standings-page table ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-standings-page table ul abbr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 100%;
+}
+
+.section-standings-page table ul abbr.won {
+    background: #00db74;
+}
+
+.section-standings-page table ul abbr.draw {
+    background: #c3b3c5;
+}
+
+.section-standings-page table ul abbr.lost {
+    background: #e0005e;
+}

@@ -1,0 +1,82 @@
+@import url('./variables.css');
+@import url('./navigation.css');
+@import url('./footer.css');
+@import url('./home-page.css');
+@import url('./fixtures-results-page.css');
+@import url('./standings-page.css');
+@import url('./popup.css');
+@import url('./loader.css');
+
+:root {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.wrapper {
+    padding: 32px;
+}
+
+.section-header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: var(--text-color-secondary);
+    background-color: var(--color-tertiary);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.section-subheader h4 {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.section-subheader img {
+    width: 32px;
+}
+
+.fixture {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color-primary);
+    padding: 20px 0;
+}
+
+.fixture:not(:first-child):not(:last-child) {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.fixture .fixture-team {
+    display: flex;
+    align-items: center;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 800;
+}
+
+.fixture .home-team p {
+    margin-right: 16px;
+}
+
+.fixture .away-team p {
+    margin-left: 16px;
+}
+
+.fixture .fixture-score-time {
+    padding: 4px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.fixture img {
+    width: 32px;
+}
